@@ -10,7 +10,7 @@ const res=document.querySelector('#m1');
 
 form.addEventListener('submit',function(e){
     e.preventDefault();
-    var path='http://localhost:3000/weather?address='+search.value;
+    var path='/weather?address='+search.value;
     fetch(path).then(function(response){
     response.json().then(function(data){
         if(data.error){
