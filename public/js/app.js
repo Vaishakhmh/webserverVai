@@ -1,5 +1,5 @@
 console.log('hi');
-fetch('weather?address=').then(function(response){
+fetch('/weather?address=').then(function(response){
     response.json().then(function(data){
         console.log(data);
     })
